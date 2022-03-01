@@ -3,7 +3,6 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Demo {
-
 	public static void main(String[] args)throws  Exception {
 		Scanner sc=new Scanner(System.in);
 		String Name=sc.nextLine();  //"Akshatha Bharadwaj C";//                       
