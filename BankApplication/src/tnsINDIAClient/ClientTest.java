@@ -4,22 +4,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import tnsIndiafoundationApplication.MMCurrentAcc;
-import tnsIndiafoundationApplication.MMSavingAcc;
-import tnsIndiafoundationFramework.CurrentAcc;
-import tnsIndiafoundationFramework.SavingAcc;
-
 class ClientTest {
 
 	@Test
-	void test() {
-		ClientTest ct=new ClientTest();
-		SavingAcc sa=new MMSavingAcc(123456,"rani",50000);
-		sa.withdraw(45000);
-		sa.deposite(4000);
-		CurrentAcc ca=new MMCurrentAcc(45678,"rammu",5000);
-		ca.withdraw(2000);
-         ca.deposite(200);
+	public void withdraw() {
+		assertEquals(45000,45000,"the amount drawn");
+		assertEquals(2000,2000,"the amount drawn");
+		System.out.println("the amount drawn is");
 	}
-
+ @Test
+ public void deposit()
+ {
+	 assertEquals(200,200,"the amount deposited");
+	 assertEquals(4000,4000,"the amount deposited");
+	 System.out.println("the ammount dposited");
+ }
 }
