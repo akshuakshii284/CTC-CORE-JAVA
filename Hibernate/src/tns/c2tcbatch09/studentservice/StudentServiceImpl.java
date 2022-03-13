@@ -50,4 +50,13 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 
+	@Override
+	public void updateTech_trainer(String s1) {
+		// TODO Auto-generated method stub
+		sd.startTransaction();
+		sd.updateTech_trainer(s1);
+		sd.endTransaction();
+	}
+
+
 }

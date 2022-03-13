@@ -12,6 +12,10 @@ void updateStudent(Student s);
 
 void deleteStudent(int uid);
 
+void updateTech_trainer(String s1);
+
+
+
 
 
 }

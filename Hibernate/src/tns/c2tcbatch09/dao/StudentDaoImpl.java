@@ -43,4 +43,17 @@ public void deleteStudent(int uid) {
 	Student s1=entityManager.find(Student.class, uid);
 	entityManager.remove(s1);
 }
+
+public void updateTech_trainer(String s1) {
+	// TODO Auto-generated method stub
+
+	entityManager.merge(s1);
+}
+
+
+
+
+
+
+
 }

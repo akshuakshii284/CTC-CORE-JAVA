@@ -10,10 +10,14 @@ public interface StudentDao {
 
 	void endTransaction();
 
-	void updateStudent(Student s);
+
 
 	Student getStudent(int uid);
 
 	void deleteStudent(int uid);
+
+	void updateTech_trainer(String s1);
+
+	void updateStudent(Student s);
 
 }
