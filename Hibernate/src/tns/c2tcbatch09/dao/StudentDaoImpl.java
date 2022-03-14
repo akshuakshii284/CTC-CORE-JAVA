@@ -2,6 +2,7 @@ package tns.c2tcbatch09.dao;
 
 import javax.persistence.EntityManager;
 
+import tns.c2tcbatch09.entity.C2TC_batch09;
 import tns.c2tcbatch09.entity.Student;
 
 public class StudentDaoImpl implements StudentDao {
@@ -43,12 +44,13 @@ public void deleteStudent(int uid) {
 	Student s1=entityManager.find(Student.class, uid);
 	entityManager.remove(s1);
 }
-
-public void updateTech_trainer(String s1) {
+@Override
+public void updateTech_trainer(C2TC_batch09 s1) {
 	// TODO Auto-generated method stub
-
 	entityManager.merge(s1);
 }
+
+
 
 
 

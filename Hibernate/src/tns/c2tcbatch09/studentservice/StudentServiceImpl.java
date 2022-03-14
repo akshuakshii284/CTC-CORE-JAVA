@@ -2,6 +2,7 @@ package tns.c2tcbatch09.studentservice;
 
 import tns.c2tcbatch09.dao.StudentDao;
 import tns.c2tcbatch09.dao.StudentDaoImpl;
+import tns.c2tcbatch09.entity.C2TC_batch09;
 import tns.c2tcbatch09.entity.Student;
 
 public class StudentServiceImpl implements StudentService {
@@ -51,7 +52,7 @@ public class StudentServiceImpl implements StudentService {
 
 
 	@Override
-	public void updateTech_trainer(String s1) {
+	public void updateTech_trainer(C2TC_batch09 s1) {
 		// TODO Auto-generated method stub
 		sd.startTransaction();
 		sd.updateTech_trainer(s1);

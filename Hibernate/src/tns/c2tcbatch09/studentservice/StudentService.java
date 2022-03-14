@@ -1,5 +1,6 @@
 package tns.c2tcbatch09.studentservice;
 
+import tns.c2tcbatch09.entity.C2TC_batch09;
 import tns.c2tcbatch09.entity.Student;
 
 public interface StudentService {
@@ -12,7 +13,7 @@ void updateStudent(Student s);
 
 void deleteStudent(int uid);
 
-void updateTech_trainer(String s1);
+void updateTech_trainer(C2TC_batch09 s1);
 
 
 
